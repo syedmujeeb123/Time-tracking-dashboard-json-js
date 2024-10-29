@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .active {
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="font-rubik bg-very-dark-blue">
+    <div class="card-container flex justify-center items-center min-h-screen">
+      <div class="md:flex md:flex-row flex-col gap-4 space-y-4 md:space-y-0">
+        <!-- Profle Container -->
+        <div class="bg-dark-blue p-0 rounded-lg">
+          <div class="bg-blue rounded-lg h-2/3 md:p-4 p-8">
+            <div class="flex md:flex-col gap-6">
+              <div>
+                <img
+                  src="./images/image-jeremy.png"
+                  class="w-14 h-14 rounded-full border-2 border-white"
+                />
+              </div>
+              <div class="flex flex-col">
+                <span class="text-desaturated-blue font-bold">Report for</span>
+                <span class="md:w-1/2 text-2xl text-white">Jeremy Robson</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex md:flex-col flex-row md:p-4 p-6 md:gap-2 gap-6 justify-center"
+          >
+            <div
+              class="daily-routine cursor-pointer text-desaturated-blue"
+              tabindex="0"
+            >
+              Daily
+            </div>
+            <div
+              class="weekly-routine active cursor-pointer text-desaturated-blue"
+              tabindex="0"
+            >
+              Weekly
+            </div>
+            <div
+              class="monthly-routine cursor-pointer text-desaturated-blue"
+              tabindex="0"
+            >
+              Monthly
+            </div>
+          </div>
+        </div>
+
+        <!-- Boxes Container -->
+        <div
+          class="boxes-container md:grid md:grid-cols-3 gap-4 grid grid-cols-1"
+        ></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
